@@ -1,9 +1,6 @@
 # SQL-to-the-SQL
 
-
-# Section 1
-
-# Topics Covered: SQL Statement Fundamentals, GROUP BY Statements, Aggregate Functions
+# Topics covered in this section: SQL Statement Fundamentals, GROUP BY Statements, Aggregate Functions
 
 # 1. Return the customer IDs of customers who have spent at least $110 with the staff member who has an ID of 2.
 
@@ -29,9 +26,7 @@ LIMIT;
 
 
 
-# Section 2
-
-# Topics Covered: JOINS, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
+# Topics Covered in this section: JOINS, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
 
 # How can you retrieve all the information from the cd.facilities table?
 
@@ -44,6 +39,7 @@ SELECT name, membercost
 FROM cd.facilities;
 
 # How can you produce a list of facilities that charge a fee to members?
+
 SELECT (*) 
 FROM cd.facilities 
 WHERE membercost > 0;
@@ -77,7 +73,8 @@ FROM cd.members
 ORDER BY surname 
 LIMIT 10;
 
-# You'd like to get the signup date of your last member. How can you retrieve this information?
+# What is the signup date of your last member?
+
 SELECT max(joindate) as latest 
 FROM cd.members;
 
