@@ -1,11 +1,8 @@
 # SQL-to-the-SQL
 
-# Throughout this course, I was asked various business questions and wrote custom SQL queries to return the answers
+# Section 2
 
-# Topics covered in this section: SQL Statement Fundamentals, GROUP BY Statements, Aggregate Functions
-
-
-# 1. Return the customer IDs of customers who have spent at least $110 with the staff member who has an ID of 2.
+# Return the customer IDs of customers who have spent at least $110 with the staff member who has an ID of 2.
 
 SELECT customer_id,SUM(amount)
 FROM payment
@@ -28,7 +25,7 @@ LIMIT;
 
 
 
-# Topics Covered in this section: JOINS, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
+# SECTION 2
 
 # How can you retrieve all the information from the cd.facilities table?
 
@@ -120,8 +117,7 @@ WHERE mems.firstname='David' AND mems.surname='Farrell';
 
 
 
-# My final project included: Creating, altering, inserting, updating, deleting, dropping, and checking databases, tables and rows
-
+# Section 3
 # I was asked to create a new database, tables, and columns based on given information about students and teachers 
 # given certain constraints. Here are my results:
 
