@@ -1,6 +1,9 @@
 # SQL-to-the-SQL
 
+# Throughout this course, I was asked various business questions and wrote custom SQL queries to return the answers
+
 # Topics covered in this section: SQL Statement Fundamentals, GROUP BY Statements, Aggregate Functions
+
 
 # 1. Return the customer IDs of customers who have spent at least $110 with the staff member who has an ID of 2.
 
@@ -14,7 +17,6 @@ HAVING SUM(amount) > 110;
 
 SELECT COUNT(*) FROM film
 WHERE title LIKE 'J%';
-
 
 # 3. What customer has the highest customer ID number whose name starts with an 'E' and has an address ID lower than 500?
 
@@ -116,15 +118,13 @@ INNER JOIN cd.members mems
 ON mems.memid = bks.memid 
 WHERE mems.firstname='David' AND mems.surname='Farrell';
 
-# Creating, altering, inserting, updating, deleting, dropping, and checking tables and rows
 
-# Create a new database called "School" this database should have two tables: teachers and students. 
-# The students table should have columns for student_id, first_name,last_name, homeroom_number, phone,email, and graduation year. 
-# The teachers table should have columns for teacher_id, first_name, last_name, homeroom_number, department, email, and phone.
-# The constraints are mostly up to you, but your table constraints do have to consider the following:
-# We must have a phone number to contact students in case of an emergency.
-# We must have ids as the primary key of the tables
-# Phone numbers and emails must be unique to the individual.
+
+# My final project included: Creating, altering, inserting, updating, deleting, dropping, and checking databases, tables and rows
+
+# I was asked to create a new database, tables, and columns based on given information about students and teachers 
+# given certain constraints. Here are my results:
+
 
 CREATE TABLE students (
 	student_id SERIAL PRIMARY KEY NOT NULL,
@@ -160,11 +160,11 @@ CREATE TABLE students (
  	
  VALUES(
 	'Mark',
- 'Watney',
- 1,
+ 	'Watney',
+	 1,
 	7775551234,
- 2035,
- 5);
+ 	2035,
+ 	5);
  
  INSERT INTO teachers(
 	 first_name,
@@ -176,10 +176,10 @@ CREATE TABLE students (
 	 homeroom_number);
  	
  VALUES(
-  'Jonas',
-  'Salk',
-  1,
-  'jsalk@school.org',
-  7775554321,
-  'Biology',
-  5);
+  	'Jonas',
+  	'Salk',
+ 	 1,
+  	'jsalk@school.org',
+  	7775554321,
+  	'Biology',
+ 	 5);
