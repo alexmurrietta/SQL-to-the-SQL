@@ -115,3 +115,71 @@ FROM cd.bookings bks
 INNER JOIN cd.members mems 
 ON mems.memid = bks.memid 
 WHERE mems.firstname='David' AND mems.surname='Farrell';
+
+# Creating, altering, inserting, updating, deleting, dropping, and checking tables and rows
+
+# Create a new database called "School" this database should have two tables: teachers and students. 
+# The students table should have columns for student_id, first_name,last_name, homeroom_number, phone,email, and graduation year. 
+# The teachers table should have columns for teacher_id, first_name, last_name, homeroom_number, department, email, and phone.
+# The constraints are mostly up to you, but your table constraints do have to consider the following:
+# We must have a phone number to contact students in case of an emergency.
+# We must have ids as the primary key of the tables
+# Phone numbers and emails must be unique to the individual.
+
+CREATE TABLE students (
+	student_id SERIAL PRIMARY KEY NOT NULL,
+	first_name VARCHAR NOT NULL,
+	last_name VARCHAR NOT NULL,
+	homeroom_number INTEGER NOT NULL,
+	phone INTEGER UNIQUE NOT NULL,
+	email VARCHAR UNIQUE NOT NULL,
+	graduation_year INTEGER NOT NULL);
+ 
+ CREATE TABLE teachers (
+	teacher_id SERIAL PRIMARY KEY NOT NULL,
+	first_name VARCHAR NOT NULL,
+	last_name VARCHAR NOT NULL,
+	homeroom_number INTEGER NOT NULL,
+	phone INTEGER UNIQUE NOT NULL,
+	email VARCHAR UNIQUE NOT NULL,
+	department VARCHAR NOT NULL);
+ 
+ #Student did not have an email, so altered table to drop the NOT NULL constraint
+ 
+ ALTER TABLE students
+ ALTER COLUMN email
+ DROP NOT NULL;
+
+ INSERT INTO students(
+	first_name,
+	last_name,
+	student_id,
+	phone,
+	graduation_year,
+	homeroom_number);
+ 	
+ VALUES(
+	'Mark',
+ 'Watney',
+ 1,
+	7775551234,
+ 2035,
+ 5);
+ 
+ INSERT INTO teachers(
+	 first_name,
+	 last_name,
+	 teacher_id,
+	 email,
+	 phone,
+	 department,
+	 homeroom_number);
+ 	
+ VALUES(
+  'Jonas',
+  'Salk',
+  1,
+  'jsalk@school.org',
+  7775554321,
+  'Biology',
+  5);
