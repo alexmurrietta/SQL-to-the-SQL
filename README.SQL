@@ -1,8 +1,8 @@
 # SQL-to-the-SQL
 
-# Section 2
+# Section 1
 
-# Return the customer IDs of customers who have spent at least $110 with the staff member who has an ID of 2.
+# 1. Return the customer IDs of customers who have spent at least $110 with the staff member who has an ID of 2.
 
 SELECT customer_id,SUM(amount)
 FROM payment
@@ -140,7 +140,7 @@ CREATE TABLE students (
 	email VARCHAR UNIQUE NOT NULL,
 	department VARCHAR NOT NULL);
  
- #Student did not have an email, so altered table to drop the NOT NULL constraint
+ # Student did not have an email, so altered table to drop the NOT NULL constraint
  
  ALTER TABLE students
  ALTER COLUMN email
