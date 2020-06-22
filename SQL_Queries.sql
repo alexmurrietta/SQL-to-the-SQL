@@ -179,3 +179,24 @@ CREATE TABLE students (
   	7775554321,
   	'Biology',
  	 5);
+
+# Section 4 
+
+# How can you categorize different movie ratings, and find how many of each rating we have?
+
+SELECT
+SUM(CASE rating
+	WHEN 'R' THEN 1
+	ELSE 0
+END) as r,
+
+SUM(CASE rating
+  	WHEN 'PG' THEN 1
+	ELSE 0
+END) as pg,
+
+SUM(CASE rating
+  	WHEN 'PG-13' THEN 1
+	ELSE 0
+END) as pg13
+FROM film
