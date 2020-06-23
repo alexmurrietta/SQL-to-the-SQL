@@ -6,11 +6,11 @@ Throughout this course, I was taught various topics and then was given exams bas
 # SQL Statement Fundamentals, Aggregate Functions.
     a. Statements learned: SELECT, DISTINCT, COUNT, WHERE, ORDER BY, LIMIT, BETWEEN, IN, LIKE and LIKE, GROUP BY, HAVING, AVG, MAX, MIN, SUM
 
-2.	Joins, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
+# Joins, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
     a. Statements learned: AS, INNER JOIN, FULL OUTER JOIN, LEFT JOIN, RIGHT JOIN, UNION, EXTRACT
 
-3.	Final Project: Creating and editing databases. C
+# Final Project: Creating and editing databases. C
     a. Statements learned: REATE, ALTER, INSERT, UPDATE, DELETE, DROP, and CHECK databases, tables and rows
 
-4. Conditional Expressions and Procedures: 
+# Conditional Expressions and Procedures: 
     a. Statements learned: CASE
