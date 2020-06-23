@@ -3,7 +3,7 @@ SQL Course
 Throughout this course, I was taught various topics and then was given exams based on business questions and had to write custom SQL queries to answer them. If you wish to view the course by section, I listed the document by section. The course can be broken up into 4 sections:
 
 
-1.	SQL Statement Fundamentals, Aggregate Functions.
+# SQL Statement Fundamentals, Aggregate Functions.
     a. Statements learned: SELECT, DISTINCT, COUNT, WHERE, ORDER BY, LIMIT, BETWEEN, IN, LIKE and LIKE, GROUP BY, HAVING, AVG, MAX, MIN, SUM
 
 2.	Joins, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
