@@ -9,8 +9,8 @@ Throughout this course, I was taught various topics and then was given exams bas
 # Joins, Timestamps and Extract, Mathematical Functions, String Function and Operators, SubQuery, Self-Join
     a. Statements learned: AS, INNER JOIN, FULL OUTER JOIN, LEFT JOIN, RIGHT JOIN, UNION, EXTRACT
 
-# Final Project: Creating and editing databases. C
-    a. Statements learned: REATE, ALTER, INSERT, UPDATE, DELETE, DROP, and CHECK databases, tables and rows
+# Final Project: Creating and editing databases and tables
+    a. Statements learned: CREATE, ALTER, INSERT, UPDATE, DELETE, DROP, and CHECK
 
 # Conditional Expressions and Procedures: 
     a. Statements learned: CASE
