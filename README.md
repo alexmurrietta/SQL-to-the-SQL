@@ -1,6 +1,6 @@
-SQL Course
+# SQL Course
 
-Throughout this course, I was taught various topics and then was given exams based on business questions and had to write custom SQL queries to answer them. If you wish to view the course by section, I listed the document by section. The course can be broken up into 4 sections:
+Throughout this course, I was taught various topics and then was given exams based on business questions and wrote [custom SQL queries](https://github.com/alexmurrietta/SQL-to-the-SQL/blob/master/SQL_Queries.sql) to answer them. If you wish to view the course by section, I listed the document by section. The course can be broken up into 4 sections:
 
 
 # SQL Statement Fundamentals, Aggregate Functions.
